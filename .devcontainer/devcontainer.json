@@ -1,0 +1,17 @@
+{
+  "name": "OpenCode GUI",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "20"
+    }
+  },
+  "postCreateCommand": "npm install -g opencode-ai && npm ci && npm run compile && opencode --version",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "opencode.autoEditorContext.enabled": true
+      }
+    }
+  }
+}

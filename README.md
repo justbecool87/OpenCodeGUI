@@ -108,6 +108,16 @@ If the extension cannot find OpenCode CLI, add the folder that contains `opencod
 
 Tip: In VS Code integrated terminal, run `opencode --version` to verify PATH is correct.
 
+### GitHub Codespaces / Dev Containers (recommended remote setup)
+
+This repository includes `.devcontainer/devcontainer.json`, which preinstalls the
+OpenCode CLI (`opencode-ai`) and compiles the extension, so OpenCode GUI works out
+of the box in GitHub Codespaces or any Dev Containers-compatible environment.
+Provider models configured in opencode (GitHub Copilot, OpenCode zen, etc.) appear
+in the sidebar model picker automatically. See
+[docs/codespaces-setup.md](docs/codespaces-setup.md) for sign-in, packaging, and an
+optional flow for attaching to an externally hosted opencode server.
+
 ### From VSIX
 
 1. Download the latest `opencode-gui-<version>.vsix` file.
